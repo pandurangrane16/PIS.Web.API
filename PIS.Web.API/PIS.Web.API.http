@@ -1,0 +1,6 @@
+@PIS.Web.API_HostAddress = http://localhost:5201
+
+GET {{PIS.Web.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
