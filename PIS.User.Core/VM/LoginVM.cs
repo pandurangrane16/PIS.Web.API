@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PIS.User.Core.VM
+{
+    public class LoginVM
+    {
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public string EncryptionKey { get; set; }
+        public string IVValue { get; set; }
+    }
+}
