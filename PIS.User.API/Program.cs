@@ -47,6 +47,7 @@ builder.Services.AddDbContext<UserContext>(options =>
     options.UseNpgsql(connectionString.ToString()));
 builder.Services.AddDataAccess<UserContext>();
 builder.Services.AddScoped<IErrorLog, ErrorLogService>();
+builder.Services.AddScoped<IUserLoginService, UserLoginService>();
 builder.Services.AddInternalServices();
 
 

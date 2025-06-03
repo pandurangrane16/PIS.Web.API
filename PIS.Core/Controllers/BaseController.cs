@@ -8,6 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Principal;
 using System.Text;
 using PIS.Framework.Models;
+using System.Security.Cryptography;
 
 namespace PIS.Framework.Controllers
 {
@@ -57,5 +58,9 @@ namespace PIS.Framework.Controllers
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)) // The same key as the one that generate the token
             };
         }
-    }
+
+
+
+		
+	}
 }

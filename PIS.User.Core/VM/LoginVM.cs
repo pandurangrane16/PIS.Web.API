@@ -10,7 +10,6 @@ namespace PIS.User.Core.VM
     {
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string EncryptionKey { get; set; }
-        public string IVValue { get; set; }
+        
     }
 }
