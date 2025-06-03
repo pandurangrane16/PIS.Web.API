@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PIS.Framework.Controllers;
 using PIS.Framework.Models;
 using PIS.User.Core.Domain;
 using PIS.User.Core.Services;
 
 namespace PIS.User.API.Controllers
 {
-    public class MenuMasterController : Controller
+    public class MenuMasterController : BaseController
     {
         public readonly IMenuMaster _clientService;
         public readonly IConfiguration _config;

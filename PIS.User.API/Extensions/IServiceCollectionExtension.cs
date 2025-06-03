@@ -8,6 +8,7 @@ namespace PIS.User.API.Extensions
         {
             services.AddTransient<IClientService, ClientService>();
             services.AddTransient<IRoleService, RoleService>();
+            services.AddTransient<IMenuMaster, MenuMasterService>();
             //services.AddScoped<IErrorLog, ErrorLogService>();
             return services;
         }

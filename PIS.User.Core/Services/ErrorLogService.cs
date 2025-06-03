@@ -29,7 +29,7 @@ namespace PIS.User.Core.Services
             {
                 var repository = uow.GetRepository<ErrorLog>();
                 repository.Add(_details);
-                await uow.SaveChangesAsync();
+                //await uow.SaveChangesAsync();
             }
         }
     }
