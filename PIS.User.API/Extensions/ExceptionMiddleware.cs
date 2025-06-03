@@ -23,7 +23,7 @@ namespace PIS.User.API.Extensions
             {
                 // Resolve scoped service properly
                 var errorLogger = context.RequestServices.GetRequiredService<IErrorLog>();
-                errorLogger.LogError(ex);
+                //errorLogger.LogError(ex);
 
                 context.Response.StatusCode = StatusCodes.Status500InternalServerError;
                 context.Response.ContentType = "application/json";

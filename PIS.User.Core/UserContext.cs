@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PIS.Framework.Context;
+using PIS.Framework.Models;
 using PIS.User.Core.Domain;
 
 namespace PIS.User.Core
@@ -16,8 +17,9 @@ namespace PIS.User.Core
         {
 
         }
-
+        public DbSet<ErrorLog> errorLogs { get; set; }
         public DbSet<ClientDetails> clientdetails { get; set; }
+        public DbSet<UserLogin> userlogin { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
