@@ -8,7 +8,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "VMS.CVMC.API": {
+    "PIS.User.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

@@ -117,10 +117,8 @@ var app = builder.Build();
 // Middleware pipeline
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    //c.SwaggerEndpoint("v1/swagger.json", "MyAPI V1");
-    c.SwaggerEndpoint("../swagger/v1/swagger.json", "VCMC V1");
+app.UseSwaggerUI(c => {
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
 });
 
 app.UseHttpsRedirection();
