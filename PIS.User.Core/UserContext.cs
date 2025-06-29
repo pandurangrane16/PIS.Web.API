@@ -21,6 +21,7 @@ namespace PIS.User.Core
         public DbSet<ClientDetails> clientdetails { get; set; }
         public DbSet<UserLogin> userlogin { get; set; }
         public DbSet<MenuMaster> menuMasters { get; set; }
+        public DbSet<RegistrationDetails> registrationDetails { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.LowerCaseTablesAndFields();

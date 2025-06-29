@@ -14,7 +14,7 @@ namespace PIS.User.Core.Services
 		Task<ResponseVM> GetUserLogin(CommonInputVM _vm, int? id);
 		Task<int> SaveUserLoginAsync(UserLogin userlogin);
 		Task<int> PutUserLoginMasterAsync(UserLogin userlogin);
+		Task<int> UserRegistration(RegistrationDetails _details);
 
-		
-	}
+    }
 }
